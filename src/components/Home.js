@@ -39,6 +39,7 @@ export default function Home(props) {
       <VideoComponent
         url="https://www.youtube.com/watch?v=ElvytQCWmiI&t=13s"
       />
+      <br></br>
       <Carousel responsive={responsive}>
         {allVideoData}
       </Carousel>
