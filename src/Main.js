@@ -18,6 +18,7 @@ import MUIMenuItem from '@material-ui/core/MenuItem';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import { makeStyles } from '@material-ui/core/styles';
 
+
 export default function Main(props) {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -29,7 +30,6 @@ export default function Main(props) {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
 
   const useStyles = makeStyles(theme => ({
     root: {
@@ -58,8 +58,6 @@ export default function Main(props) {
   }));
   const classes = useStyles();
 
-
-
   // export default function Main(props) {
   return (
     <React.Fragment>
@@ -71,15 +69,18 @@ export default function Main(props) {
           <li><NavLink to="/service">Service</NavLink></li>
           <li><NavLink to="/portfolio">Portfolio</NavLink></li>
         </ul> */}
-        <AppBar position="static" style={{ backgroundColor: 'white' }}>
+        <AppBar position="static" style={{ backgroundColor: 'turquoise' }}>
           <Toolbar>
 
             <IconButton edge="start" className={classes.menuButton} color="secondary" aria-label="menu">
               <LocalPharmacy fontSize="large" />
             </IconButton>
-            <Typography variant="h4" className={classes.title} color="textSecondary">
+            <Typography variant="h4" className={classes.title} color="red">
               Canadian Crescendo
                 </Typography>
+            <div>
+              Directory
+                </div>
             <IconButton
               aria-label="more"
               aria-controls="long-menu"
