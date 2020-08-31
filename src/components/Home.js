@@ -6,6 +6,7 @@ import VideoComponent from "./VideoComponent";
 
 const data = require("../../src/videoData.json")
 
+
 export default function Home(props) {
   console.log(data.videourls);
   const allVideoData = data.videourls.map((itemObj, ind) => (
@@ -35,15 +36,17 @@ export default function Home(props) {
     }
   };
   return (
-    <div>
-      <VideoComponent
-        url="https://www.youtube.com/watch?v=ElvytQCWmiI&t=13s"
-      />
-      <br></br>
-      <Carousel responsive={responsive}>
-        {allVideoData}
-      </Carousel>
-    </div>
+     
+      <div>
+        <VideoComponent
+          url="https://www.youtube.com/watch?v=ElvytQCWmiI&t=13s"
+        />
+        <br></br>
+        <Carousel responsive={responsive}>
+          {allVideoData}
+        </Carousel>
+      </div>
+  
   );
 
 }

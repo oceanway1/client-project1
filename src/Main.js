@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./components/index.css";
 import { AppBar } from '@material-ui/core';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -20,7 +20,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 
 export default function Main(props) {
-
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -58,11 +57,10 @@ export default function Main(props) {
   }));
   const classes = useStyles();
 
-  // export default function Main(props) {
   return (
     <React.Fragment>
       <Router>
-
+        {/* <body */}
         {/* <h1>Canadian Crescendo</h1>
         <ul className="header">
           <li><NavLink exact to="/">Home</NavLink></li>
@@ -123,8 +121,7 @@ export default function Main(props) {
         <Route exact path="/" component={Home} />
         <Route path="/service" component={Service} />
         <Route path="/portfolio" component={Portfolio} />
-        {/* </div> */}
-        {/* </div> */}
+        {/* </body> */}
       </Router>
     </React.Fragment >
 
