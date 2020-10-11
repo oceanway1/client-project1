@@ -39,6 +39,7 @@ export default function Main(props) {
     },
     title: {
       flexGrow: 1,
+      fontSize: 'calc(15px + 1.5vw)',
     },
     table: {
       minWidth: 650,
@@ -69,7 +70,7 @@ export default function Main(props) {
             <Typography variant="h4" className={classes.title} color="red">
               Canadian Crescendo
                 </Typography>
-            <div>
+            <div style={{ fontSize: 'calc(10px + 1.5vw)',}}>
               Directory
                 </div>
             <IconButton
