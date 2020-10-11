@@ -60,13 +60,6 @@ export default function Main(props) {
   return (
     <React.Fragment>
       <Router>
-        {/* <body */}
-        {/* <h1>Canadian Crescendo</h1>
-        <ul className="header">
-          <li><NavLink exact to="/">Home</NavLink></li>
-          <li><NavLink to="/service">Service</NavLink></li>
-          <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-        </ul> */}
         <AppBar position="static" style={{ backgroundColor: 'turquoise' }}>
           <Toolbar>
 
